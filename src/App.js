@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React , {useState} from 'react';
 import ToDoForm from './component/ToDoForm';
-import ToDoView from './component/ToDoView';
+import ToDoList from './component/ToDoList';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Layouts from './component/Layouts';
@@ -54,7 +54,7 @@ function App() {
       <Header title="To Do Application" />
       <ToDoSummery todos={todos} resetTaskList={resetTaskList}/>
       <ToDoForm handleSubmitForm={handleSubmitForm} task={task}  message={message}  handleChange={handleChange}  />        
-      <ToDoView todos={todos} removeTask={removeTask}/>
+      <ToDoList todos={todos} removeTask={removeTask}/>
     </Layouts>
   );
 }

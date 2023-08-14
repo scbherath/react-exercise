@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDoTaskView from './ToDoTaskView';
 
-const ToDoView = ({todos, removeTask}) => {
+const ToDoList = ({todos, removeTask}) => {
     return (
         <div>  
             {todos.length>0?
@@ -27,4 +27,4 @@ const ToDoView = ({todos, removeTask}) => {
     )
 }
 
-export default ToDoView;
+export default ToDoList;
