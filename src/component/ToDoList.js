@@ -14,7 +14,7 @@ const ToDoList = ({todos, removeTask}) => {
                 {
                     todos && todos.map((item,i)=>(
                       <li key={i}>
-                        <ToDoTaskView key={i} item={item} removeTask={removeTask} />                      
+                        <ToDoTaskView id={i} item={item} removeTask={removeTask} />                      
                       </li>       
                     ))
                 }
